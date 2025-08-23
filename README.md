@@ -19,7 +19,7 @@
 * [Créditos](#-créditos)
 ---
 # Demo / Capturas
-* 🔗 **Demo en vivo:**
+* 🔗 **Demo en vivo:** [https://ivangamboa1.github.io/amigo-secreto/](https://ivangamboa1.github.io/amigo-secreto/)
 ---
 ##  Objetivos de aprendizaje
 * Manipular el **DOM** (crear elementos, leer inputs, actualizar contenido con `innerHTML`).
@@ -64,19 +64,24 @@ cd amigo-secreto
 ![](assets/captura-5-validacion-sin-participantes.png)
 
 ---
-## Como Funciona 
-# Diagrama
-> flowchart TD
->  A[Escribir nombre] --> B{¿Nombre vacío?}
->  B -- Sí --> C[Mostrar alerta]\n["Por favor ingresa un nombre"]
->  B -- No --> D[Agregar al array]
->  D --> E[Crear <li> en #listaAmigos]
->  E --> F[Puede agregar más]
->  F --> G[Click "Sortear amigo"]
->  G --> H{¿Lista vacía?}
->  H -- Sí --> I[Mostrar alerta]\n["No hay amigos secretos para sortear"]
->  H -- No --> J[Elegir aleatorio con Math.random()]
->  J --> K[Mostrar en #resultado]
+# Diagrama de flujo del programa
+
+1. **Inicio**
+   - El usuario abre la aplicación.
+2. **Ingresar nombre**
+   - Se escribe un nombre en el campo de texto.
+   - El sistema valida que no esté vacío.
+3. **Añadir a la lista**
+   - El nombre válido se guarda en un arreglo.
+   - Se muestra en la lista de participantes.
+4. **Validaciones**
+   - Si el campo está vacío → alerta “Por favor ingresa un nombre”.
+   - Si no hay participantes → alerta “No hay amigos secretos para sortear”.
+5. **Sortear amigo**
+   - El sistema selecciona un nombre al azar.
+   - Muestra el resultado en pantalla.
+6. **Fin**
+
 ---
 # Problemas comunes y soluciones 
 * No aparecen estilos → Verifica la ruta de style.css en el <head>.
