@@ -66,17 +66,17 @@ cd amigo-secreto
 ---
 ## Como Funciona 
 # Diagrama
-flowchart TD
-  A[Escribir nombre] --> B{¿Nombre vacío?}
-  B -- Sí --> C[Mostrar alerta]\n["Por favor ingresa un nombre"]
-  B -- No --> D[Agregar al array]
-  D --> E[Crear <li> en #listaAmigos]
-  E --> F[Puede agregar más]
-  F --> G[Click "Sortear amigo"]
-  G --> H{¿Lista vacía?}
-  H -- Sí --> I[Mostrar alerta]\n["No hay amigos secretos para sortear"]
-  H -- No --> J[Elegir aleatorio con Math.random()]
-  J --> K[Mostrar en #resultado]
+> flowchart TD
+>  A[Escribir nombre] --> B{¿Nombre vacío?}
+>  B -- Sí --> C[Mostrar alerta]\n["Por favor ingresa un nombre"]
+>  B -- No --> D[Agregar al array]
+>  D --> E[Crear <li> en #listaAmigos]
+>  E --> F[Puede agregar más]
+>  F --> G[Click "Sortear amigo"]
+>  G --> H{¿Lista vacía?}
+>  H -- Sí --> I[Mostrar alerta]\n["No hay amigos secretos para sortear"]
+>  H -- No --> J[Elegir aleatorio con Math.random()]
+>  J --> K[Mostrar en #resultado]
 ---
 # Problemas comunes y soluciones 
 * No aparecen estilos → Verifica la ruta de style.css en el <head>.
