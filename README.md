@@ -13,7 +13,6 @@
 * [Objetivos de aprendizaje](#-objetivos-de-aprendizaje)
 * [Instalación y ejecución](#-instalación-y-ejecución)
 * [Dependencias](#-dependencias)
-* [Estructura del proyecto](#-estructura-del-proyecto)
 * [Guía visual ](#-guía-visual)
 * [Cómo funciona ](#-cómo-funciona)
 * [Problemas comunes y soluciones](#-problemas-comunes-y-soluciones)
@@ -40,41 +39,29 @@ git clone https://github.com/IvanGamboa1/amigo-secreto.git
 cd amigo-secreto
 ```
 ---
-## Dependencias ]
+# Dependencias ]
 > Este proyecto no requiere dependencias externas. Solo necesitas un navegador web moderno (Chrome, Firefox, Edge, etc.)
 ---
-## Estructura del Proyecto
-raiz-del-proyecto/
-├─ index.html
-├─ app.js
-├─ style.css
-└─ assets/
-   ├─ amigo-secreto.png
-   ├─ captura-1-inicio.png
-   ├─ captura-2-lista.png
-   ├─ captura-3-resultado.png
-   ├─ captura-4-validacion-vacio.png
-   └─ captura-5-validacion-sin-participantes.png
----
-## Guia visual
-## Pantalla inicial / Agregar primer nombre
-> En esta pantalla se escribe el nombre en el campo de texto y se presiona Añadir. Ya añadido 
+# Guia visual
+# Pantalla inicial / Agregar primer nombre
+ > En esta pantalla se escribe el nombre en el campo de texto y se presiona Añadir. Ya añadido 
+![](assets/captura-1-inicio.png)
 
-
-## Lista con varios participantes
+# Lista con varios participantes
 > Tras añadir varios nombres, se muestran en la zona de lista. Esto confirma que el array interno está guardando los valores.
+![](assets/captura-2-lista.png)
 
-
-## Resultado del sorteo 
+# Resultado del sorteo 
 > Al pulsar Sortear amigo, el sistema elige un nombre al azar y lo muestra en rojo con mayor énfasis.
+![](assets/captura-3-resultado.png)
 
-## Validación: intento de agregar vacío
+# Validación: intento de agregar vacío
 > Si presionas Añadir con el campo vacío, aparece una alerta pidiendo ingresar un nombre. Evita datos inválidos.
+![](assets/captura-4-validacion-vacio.png)
 
-
-## Validación: sortear sin participantes
+# Validación: sortear sin participantes
 > Si intentas sortear sin haber agregado nombres, se alerta que no hay amigos para sortear.
-
+![](assets/captura-5-validacion-sin-participantes.png)
 
 ---
 ## Como Funciona 
@@ -91,7 +78,7 @@ flowchart TD
   H -- No --> J[Elegir aleatorio con Math.random()]
   J --> K[Mostrar en #resultado]
 ---
-## Problemas comunes y soluciones 
+# Problemas comunes y soluciones 
 * No aparecen estilos → Verifica la ruta de style.css en el <head>.
 * El botón no hace nada → Revisa que <script src="app.js" defer></script> esté al final del body.
 * Se agregan nombres vacíos → Validación con .trim().
